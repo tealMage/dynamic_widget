@@ -263,6 +263,26 @@ class _MyHomePageState extends State<MyHomePage> {
                         builder: (context) => CodeEditorPage(cliprrectJson)));
               },
             ),
+            RaisedButton(
+              child: Text("Cupertino Button"),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            CodeEditorPage(cupertinoButtonJson)));
+              },
+            ),
+            RaisedButton(
+              child: Text("Cupertino Switch"),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            CodeEditorPage(cupertinoSwitchJson)));
+              },
+            ),
           ],
         ));
   }

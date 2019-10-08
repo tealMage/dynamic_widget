@@ -886,3 +886,42 @@ var cliprrectJson = '''
   }
 }
 ''';
+
+
+//Cupertino Widgets
+
+var cupertinoButtonJson = '''
+{
+  "type": "Container",
+  "alignment": "center",
+  "child": {
+    "type": "CupertinoButton",
+    "color": "#008080",
+    "padding": "8,8,8,8",
+    "disabledColor": "#00FF00",
+    "minSize": 10.0,
+    "pressedOpacity": 0.1,
+    "borderRadius": 8.0,
+    "click_event" : "route://productDetail?goods_id=123",
+    "child" : {
+      "type": "Text",
+      "data": "I am a button"
+    }  
+  }
+}
+
+
+''';
+
+var cupertinoSwitchJson = '''
+{
+  "type": "Container",
+  "alignment": "center",
+  "child": {
+    "type": "CupertinoSwitch",
+    "activeColor": "#008080",
+    "value": true
+  }
+}
+
+''';

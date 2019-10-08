@@ -21,11 +21,16 @@ import 'package:dynamic_widget/dynamic_widget/basic/wrap_widget_parser.dart';
 import 'package:dynamic_widget/dynamic_widget/scrolling/gridview_widget_parser.dart';
 import 'package:dynamic_widget/dynamic_widget/scrolling/listview_widget_parser.dart';
 import 'package:dynamic_widget/dynamic_widget/scrolling/pageview_widget_parser.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:convert';
 import 'package:logging/logging.dart';
 
 import 'dynamic_widget/basic/cliprrect_widget_parser.dart';
+
+import 'package:dynamic_widget/dynamic_widget/cupertino/cupertino_button_widget_parser.dart';
+import 'package:dynamic_widget/dynamic_widget/cupertino/cupertino_switch_widget_parser.dart';
+
 
 class DynamicWidgetBuilder {
   static final Logger log = Logger('DynamicWidget');
@@ -56,7 +61,9 @@ class DynamicWidgetBuilder {
     SizedBoxWidgetParser(),
     OpacityWidgetParser(),
     WrapWidgetParser(),
-    ClipRRectWidgetParser()
+    ClipRRectWidgetParser(),
+    CupertinoButtonWidgetParser(),
+    CupertinoSwitchWidgetParser()
   ];
 
   // use this method for adding your custom widget parser
